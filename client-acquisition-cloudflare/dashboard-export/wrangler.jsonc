@@ -1,0 +1,51 @@
+{
+  "name": "outreach-x-signal-scout",
+  "main": "src/index.js",
+  "workers_dev": true,
+  "preview_urls": true,
+  "compatibility_date": "2026-08-08",
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
+    "AUTHORS_SCAN_END_ROW": "1500",
+    "DRY_RUN": "false",
+    "ENABLED_SOURCES": "x,reddit,youtube,builder,instagram,tiktok,open_web",
+    "ENVIRONMENT": "production",
+    "FINDINGS_SCAN_END_ROW": "2998",
+    "GOOGLE_SPREADSHEET_ID": "1CTeyNPXZWo2ZSSKFis2t3ber0P0b9OXgiRNKaBjVuSQ",
+    "KEENABLE_MCP_URL": "https://api.keenable.ai/mcp",
+    "LEAD_OUTREACH_SPREADSHEET_ID": "1fXHlnCqsw6KvKub4UtqHyb5MwUUPvqTZ9QvPp1IPG-E",
+    "MAX_AGE_DAYS": "45",
+    "MAX_DEEP_READS": "3",
+    "MAX_EXTERNAL_SUBREQUESTS_PER_INVOCATION": "40",
+    "MAX_FETCHES_PER_SOURCE_RUN": "2",
+    "MAX_KEENABLE_OPERATIONS_PER_CYCLE": "30",
+    "MAX_SEARCHES_PER_SOURCE_RUN": "2",
+    "MAX_SEARCH_RESULTS": "8",
+    "MAX_WRITES_PER_RUN": "3",
+    "REJECTED_SCAN_END_ROW": "2000",
+    "SCHEDULED_WRITES_ENABLED": "true",
+    "SCHEDULED_WRITE_SOURCES": "x,reddit,youtube,builder,instagram,tiktok,open_web",
+    "SOURCE_MODES": "x:production,reddit:awaiting_canary_candidate,youtube:awaiting_canary_candidate,builder:awaiting_canary_candidate,instagram:coverage_insufficient,tiktok:awaiting_canary_candidate,open_web:awaiting_canary_candidate",
+    "USE_WORKERS_AI": "false"
+  },
+  "version_metadata": {
+    "binding": "CF_VERSION_METADATA"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "OPS_TELEMETRY",
+        "class_name": "OpsTelemetry"
+      }
+    ]
+  },
+  "kv_namespaces": [
+    {
+      "id": "8dfe48a6e81443e9b24f50a14e62ecb7",
+      "binding": "OUTREACH_SCOUT_STATE"
+    }
+  ]
+}
