@@ -27,3 +27,8 @@ The existing encrypted Cloudflare secrets are not stored in Git. Do not add secr
 
 ## Promotion gate
 A production deployment is forbidden until the uploaded version passes source hash verification, bindings/config verification, regression checks, and the bounded CLIENT ACQUISITION V2 canary gate. The live cron schedule must remain empty until explicitly reopened.
+
+## Connection status
+- 2026-08-11: Owner confirmed Cloudflare Workers Builds connection completed.
+- This commit intentionally acts as the first post-connection build trigger.
+- Expected outcome: materialize PASS + `versions upload` only; no production promotion.
