@@ -1,0 +1,38 @@
+CLIENT ACQUISITION V2 — CANONICAL CLOUDFLARE WORKER SOURCE SNAPSHOT
+
+Source method: Cloudflare official `wrangler init --from-dash outreach-x-signal-scout`
+Owner selected NO DEPLOY.
+Uploaded archive: outreach-x-signal-scout.zip
+
+Canonical ZIP
+- bytes: 73491
+- sha256: 9c27db026c4cebd609d2ef92badba2b626917c5ec77e8d91d58df43a2e2de98e
+- base64 chars: 97988
+- chunks: 7
+
+Canonical extracted Worker source
+- path: outreach-x-signal-scout/src/index.js
+- bytes: 250030
+- sha256: 4797447b9ca654161610679ed91479474cc75dde2c632bcacbe453afc3fe3c65
+
+Canonical exported config
+- path: outreach-x-signal-scout/wrangler.jsonc
+- sha256: ae098b53c7fc9bd0cf8ab6ac8e0ad1cd45a814e385c921ce349ae21d1ae877c7
+
+Chunk Git blob SHAs
+part-000.b64 bc6e25f19d72d867b1275f8fe5c013dba278dabd
+part-001.b64 403336aa674aa844cc119a35b16ba6f5330f01c7
+part-002.b64 55cda9bfeb073c4406f7559eb9a85b33ea9dbde5
+part-003.b64 eb9321bd1d9c5d01b9e7906cfce0da95edecb35a
+part-004.b64 2b404b5912f4defaa881b9250aca378088a69c33
+part-005.b64 bfffc282df1d74e55ebe555c2b4d34b336034d5f
+part-006.b64 44ff7cf75cfefb3e52654a2538a35f8128fb9496
+
+Security notes
+- .env, .dev.vars, node_modules, .wrangler and .git were excluded before upload.
+- No secret VALUES were found in the uploaded project during inspection.
+- Runtime secret NAMES may appear in source; their values are not stored here.
+
+Deployment rule
+THIS SNAPSHOT MUST NOT DEPLOY DIRECTLY.
+Before any Workers Build/deploy, reconcile wrangler.jsonc against current live bindings/vars/scheduler and keep the current production scheduler frozen unless explicitly authorized.
