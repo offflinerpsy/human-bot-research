@@ -1,6 +1,6 @@
 {
   "name": "outreach-x-signal-scout",
-  "main": "worktree/outreach-x-signal-scout/src/index.js",
+  "main": "v2-entry.js",
   "workers_dev": true,
   "preview_urls": true,
   "compatibility_date": "2026-08-08",
@@ -11,6 +11,7 @@
   "vars": {
     "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
     "AUTHORS_SCAN_END_ROW": "1500",
+    "CLIENT_ACQUISITION_V2_WRITE_ENABLED": "false",
     "DRY_RUN": "true",
     "ENABLED_SOURCES": "x,reddit,youtube,builder,instagram,tiktok,open_web",
     "ENVIRONMENT": "production",
