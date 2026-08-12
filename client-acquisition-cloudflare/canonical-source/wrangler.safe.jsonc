@@ -1,6 +1,6 @@
 {
   "name": "outreach-x-signal-scout",
-  "main": "v2-entry.js",
+  "main": "v2-entry-v3.js",
   "workers_dev": true,
   "preview_urls": true,
   "compatibility_date": "2026-08-08",
