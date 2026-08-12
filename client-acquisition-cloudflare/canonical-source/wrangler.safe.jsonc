@@ -5,12 +5,6 @@
   "preview_urls": true,
   "compatibility_date": "2026-08-08",
   "keep_vars": true,
-  "secrets": {
-    "required": [
-      "GOOGLE_SERVICE_ACCOUNT_JSON",
-      "RESEARCH_CONTROL_SECRET"
-    ]
-  },
   "ai": {
     "binding": "AI"
   },
