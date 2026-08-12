@@ -1,6 +1,6 @@
 {
   "name": "outreach-x-signal-scout",
-  "main": "v2-preview-once.js",
+  "main": "v2-entry-v3.js",
   "workers_dev": true,
   "preview_urls": true,
   "compatibility_date": "2026-08-08",
@@ -11,10 +11,10 @@
   "vars": {
     "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
     "AUTHORS_SCAN_END_ROW": "1500",
-    "CLIENT_ACQUISITION_V2_WRITE_ENABLED": "true",
+    "CLIENT_ACQUISITION_V2_WRITE_ENABLED": "false",
     "DRY_RUN": "true",
     "ENABLED_SOURCES": "x,reddit,youtube,builder,instagram,tiktok,open_web",
-    "ENVIRONMENT": "preview-canary",
+    "ENVIRONMENT": "production",
     "FINDINGS_SCAN_END_ROW": "2998",
     "GOOGLE_SPREADSHEET_ID": "1CTeyNPXZWo2ZSSKFis2t3ber0P0b9OXgiRNKaBjVuSQ",
     "KEENABLE_MCP_URL": "https://api.keenable.ai/mcp",
@@ -38,6 +38,14 @@
   },
   "version_metadata": {
     "binding": "CF_VERSION_METADATA"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "OPS_TELEMETRY",
+        "class_name": "OpsTelemetry"
+      }
+    ]
   },
   "kv_namespaces": [
     {
